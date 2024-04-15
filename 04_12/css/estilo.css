@@ -1,0 +1,67 @@
+body{
+    background-color: #f7ecd6;
+}
+
+h2{
+    color: #43CD80;    
+}
+
+.vermelho{
+    color: #8B1A1A;
+}
+
+#verde{
+    color: #0d8127;
+}
+
+.azul{
+    color: #0f39c2;
+}
+
+table, th, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#um{
+ background-color: #a0413b;
+}
+#do{
+    background-color: #b9693a;
+}
+#tr{
+    background-color: #c9b543;
+}
+#qu{
+    background-color: #97b642;
+}
+#ci{
+    background-color: #3ba048;
+}
+#sei{
+    background-color: #43c4a4;
+}
+#set{
+    background-color: #2475ac;
+}
+#oi{
+    background-color: #354ac0;
+}
+#nov{
+    background-color: #976fe2;
+}
+#dez{
+    background-color: #d362cd;
+}
+
+#onz{
+    background-color: #b82a6c;
+}
+
+#doze{
+    background-color: #52697e;
+}
+
+.saudacao{
+    color: #8B1A1A;
+}
