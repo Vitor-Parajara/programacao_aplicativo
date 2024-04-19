@@ -1,0 +1,43 @@
+/*Padronização para carregamento igual nos navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+div{
+    width: 300px;
+    margin: auto;
+    background-color: yellow;
+}
+.azul{
+    background-color: aqua;
+}
+.rosa{
+    background-color: pink;
+}
+.verde{
+    background-color: green;
+}
+.container{
+    width: 100%;
+}
+.estado{
+    width: 33.333%;
+    float: left;
+}
+.divinline{
+    width: 33.04%;
+    display: inline-block;
+}
+.containerflax{
+    display: flex;
+}
+.estadoflex{
+    width: 33%;
+}
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+}
