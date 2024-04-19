@@ -1,0 +1,121 @@
+/* Padronizacao carregamento */
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #e8f1fd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/*Configurando o cabecalho*/
+#azul {
+    color: #090993;
+}
+
+#navegacao {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d8d8d8;
+    height: 45px;
+}
+
+/* Formantando os links do menu*/
+#menu a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+#menu a:visited {
+    color: #01aaff;
+}
+
+#menu a:link {
+    color: #035a86;
+}
+
+#menu a:hover {
+    color: white;
+    background-color: #000080;
+}
+
+#area_menu {
+    width: 720px;
+    margin: 0 auto;
+}
+
+/* FIM: Formantando os links do menu*/
+
+#menu {
+    float: right;
+    padding: 10px 0px;
+}
+
+#logo {
+    float: left;
+}
+
+/* Area de postagem*/
+#area_principal {
+    width: 720px;
+    margin: 55px auto 10px auto;
+}
+
+#postagem {
+    background-color: white;
+    padding: 10px;
+    border-top: 2px solid #035a86;
+}
+
+h2 {
+    color: #035a86;
+}
+
+.data_postagem {
+    font-size: 14px;
+    border-bottom: 1px solid #035a86;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.img_postagem {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.postado {
+    border-top: 1px solid #035a86;
+    padding-left: 10px;
+    display: block;
+    margin-top: 15px;
+}
+
+/*FIM: Area de postagem*/
+
+#bold {
+    font-weight: bolder;
+}
+
+#formulario{
+    float: left;
+    width: 50%;
+}
+
+#contato{
+    float: right;
+    width: 50%;
+}
+
+#caixa {
+    
+    padding: 5px 10px 10px 10px;
+    border-top: 1px solid #035a86;
+    background-color: white;
+    width: 720px;
+    height: 180px;
+    margin: 10px auto 10px auto;
+}
