@@ -23,6 +23,12 @@ body {
     height: 45px;
 }
 
+
+#area_menu {
+    width: 720px;
+    margin: 0 auto;
+}
+
 /* Formantando os links do menu*/
 #menu a {
     text-decoration: none;
@@ -42,10 +48,7 @@ body {
     background-color: #000080;
 }
 
-#area_menu {
-    width: 720px;
-    margin: 0 auto;
-}
+
 
 /* FIM: Formantando os links do menu*/
 
@@ -100,19 +103,19 @@ h2 {
     font-weight: bolder;
 }
 
-#formulario{
+#formulario {
     float: left;
     width: 49%;
     border-right: 1px solid #035a86;
 }
 
-#contato{
+#contato {
     float: right;
     width: 50%;
 }
 
 #caixa {
-    
+
     padding: 5px 10px 10px 10px;
     border-top: 1px solid #035a86;
     background-color: white;

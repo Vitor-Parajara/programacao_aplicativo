@@ -1,0 +1,66 @@
+.exemplo_background {
+    /*background-image: url("../img/pato.png");*/
+    /*background-repeat: repeat-y;*/
+    /*background-repeat: repeat-x;*/
+    background-repeat: no-repeat;
+    background-position: right top;
+    /*background-attachment: fixed;*/
+    background-attachment: scroll;
+    background: rgb(255, 240, 213) url("../img/pato.png") no-repeat center top fixed;
+}
+
+.pontilhado {
+    border-style: dotted;
+}
+
+.tracejado {
+    border-style: dashed;
+}
+
+.borda_maior {
+    border-width: 5px;
+    border-style: solid;
+}
+
+.borda_topo {
+    border-top: 2px solid rgb(75, 201, 142);
+}
+
+.principal {
+    background-color: rgb(204, 218, 142);
+    height: 800px;
+}
+
+.conteudo {
+    background-color: rgb(255, 192, 203);
+    /*margin: 20px 40px 60px 80px;*/
+    height: 300px;
+    width: 400px;
+    padding: 20 px 40px 60px 80px;
+}
+
+.conteudo_dropdown {
+    display: none;
+    background-color: rgb(83, 71, 49);
+    width: 100px;
+    color: white;
+
+}
+
+.dropdown:hover .conteudo_dropdown {
+    display: block;
+}
+
+.conteudo_dropdown li{
+    border-bottom: 1px solid white;
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.conteudo_dropdown li:hover{
+    background-color: rgb(146, 122, 78);
+}
+
+.conteudo_dropdown ul{
+    padding: 0px;
+}
