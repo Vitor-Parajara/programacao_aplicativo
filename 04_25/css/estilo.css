@@ -1,0 +1,47 @@
+.alinhado {
+    width: 500px;
+    text-align: justify;
+}
+
+.linhacima {
+    text-decoration: overline;
+}
+
+.linhameio {
+    text-decoration: line-through;
+}
+
+.linhabaixo {
+    text-decoration: underline;
+}
+
+.maiusculo {
+    text-transform: uppercase;
+}
+
+.minusculo {
+    text-transform: lowercase;
+}
+
+.palavras_espacadas {
+    word-spacing: 20px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.outra_fonte {
+    font-family: "PT Serif", serif;
+}
+
+.italico {
+    font-style: italic;
+    font-weight: bold;
+    color: pink;
+}
+
+.cor {
+    color: rgb(253, 166, 166);
+    font-size: 50px;
+}
