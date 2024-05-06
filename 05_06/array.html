@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        let cores = Array("Amarelo", "Azul", "Vermelho", "Violeta", 8.8, { tamanho: 8.8, peso: 90.4 })
+
+        cores[0] = "Verde"
+        document.write(cores)
+        console.log(cores)
+        console.log(cores.length) // acessando o tamanho do Array
+
+        cores.push("Magenta") // Acrescenta ao final do Array um elemento
+        console.log(cores)
+
+        cores.pop() // Remove o ultimo elemento do Array
+        console.log(cores)
+
+        cores.unshift("Ciano") // Adiciona no inicio do Array um elemento
+        console.log(cores)
+
+        cores.shift() // Remove o primeiro elemento
+        console.log(cores)
+
+        let num = 0
+        document.write("<ul>")
+        for(num = 0; num < cores.length; num++){
+            document.write("<li>"+cores[0]+"</li>")
+        }
+        document.write("</ul>")
+        /*while(num < cores.length){
+            document.write("<li>"+cores[num]+"</li>")
+            num++
+        }*/
+        
+        let frutas = ["Macã", "Jaca", "Pessego", "uva"]
+        console.log(frutas)
+
+        let html = "<div>"
+        html += "<h1>Olá Pessoas</h1>"
+        html += "</div>"
+        document.write(html)
+        console.log(html)
+
+        let tabela = "<tr><th>Nome</th><th>Idade</th></tr>"
+        let pessoas = [
+            ["Josué", 18],
+            ["Carlos", 22]
+        ]
+
+        tabela += "<tr><td>"+pessoas[0][0]+"</td><td>"+pessoas[0][1]+"</td></tr>"
+        //tabela += "<tr><td>"+pessoas[1][0]+"</td><td>"+pessoas[1][1]+"</td></tr>"
+
+    </script>
+</head>
+<body>
+    <table id="pessoas">
+
+    </table>
+    <script>
+        //get ecnotra um elemento com o id especifico
+        // inner acrescento ao elemento o script gerado
+        document.getElementById("pessoas").innerHTML = tabela
+    </script>
+</body>
+</html>
