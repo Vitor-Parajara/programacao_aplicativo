@@ -1,0 +1,54 @@
+/*Configurando botao*/
+#alerta{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.ceulimpo{
+    background-color: rgb(62, 131, 242);
+    font-size: 20px;
+}
+
+.nublado{
+    background-color: rgb(15, 15, 67);
+    color: white;
+}
+
+#cores{
+    height: 300px;
+    width: 200px;
+}
+
+.verde{
+    background-color: rgb(67, 217, 67);
+}
+
+.vermelho{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+
+#listaCarros,th, td {
+    border: 1px solid black
+} 
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+#titulo{
+    text-align: center;
+}
+
+tr th{
+    color: white;
+    background-color: gray;
+}
+
+tr:nth-last-child(even){
+    background-color: rgb(207, 210, 213);
+}

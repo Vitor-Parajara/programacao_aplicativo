@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script type="module">
+        import {Concessionaria} from './js/Concessionaria.js'
+
+        //Chamando função pós carregamento da página
+        window.onload = function(){
+            let novaConcessionaria = new Concessionaria()
+            novaConcessionaria.carregarCarros()
+            
+            window.novaConcessionaria = novaConcessionaria
+        }
+    </script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <h1>Carros</h1>
+    <table id="listaCarros">
+
+    </table>
+    <div id="cadastro">
+        <label for="">Marca</label>
+        <input type="text" name="" id="marca">
+        <br>
+        <label for="">Placa</label>
+        <input type="text" name="" id="placa">
+        <br>
+        <label for="">Cor</label>
+        <input type="text" name="" id="cor">
+        <br>
+        <label for="">Ano</label>
+        <input type="text" name="" id="ano">
+        <button onclick="window.novaConcessionaria.cadastrarCarro()">Cadastrar</button>
+    </div>
+</body>
+
+</html>
