@@ -1,34 +1,65 @@
+import mysql from "mysql2"
 import config from "../Config.js";
 
 class ParafusoModel {
     constructor() {
-        this.parafusos = [
-            { nome: "estrela" },
-            { nome: "frânces" },
-            { nome: "máquina" }
-        ]
+        this.conexao = mysql.createConnection(config.db);
     }
 
     create(nome) {
-        let parafuso = {
-            nome: nome
-        }
-        this.parafusos.push(parafuso);
+        let sql = `INSERT INTO parafusos (nome) VALUES("${nome}");`;
+        
+       return new Promise((resolve,reject)=>{
+        this.conexao.query(sql,(erro,retorno)=>{
+            if(erro){
+                reject([400,erro])
+            }
+            resolve([201,"Parafuso Adicionado"])
+        })
+       });
+    
     }
 
     read() {
-        return this.parafusos;
+        let sql = `SELECT * FROM parafusos;`
+        return new Promise((resolve,reject)=>{
+            this.conexao.query(sql,(erro,retorno)=>{
+                if(erro){
+                    reject([400,erro])
+                }
+                resolve([200,retorno])
+            })
+        });
     }
 
-    update(index, nome) {
-        let parafuso = {
-            nome: nome
-        }
-        this.parafusos[index] = parafuso;
+    update(id_parafuso, nome) {
+        let sql = `update parafusos set nome="${nome}" where id_parafuso = "${id_parafuso}"`
+
+        return new Promise((resolve,reject)=>{
+            this.conexao.query(sql,(erro,retorno)=>{
+                if(erro){
+                    reject([400],erro)
+                }else if(retorno.affectedRows>0){
+                    resolve([200],retorno)
+                }else{
+                    resolve([404],"Parafuso não encontrado")
+                }
+                
+            })
+        });
     }
 
     delete(index) {
-        this.parafusos.splice(index, 1 );
+        let sql = `delete from parafusos where id_parafuso = "${id_parafuso}"`
+
+        return new Promise((resolve,reject)=>{
+            this.conexao.query(sql,(erro,retorno)=>{
+                if(erro){
+                    reject([400],erro)
+                }
+                resolve([200],retorno)
+            })
+        });
     }
 }
 
