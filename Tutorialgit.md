@@ -20,3 +20,6 @@ git commit -m "O que foi realizado"
 
 - Subindo alterações -
 git push -u origin main
+
+cd -------/server
+npx nodemon src/App.js

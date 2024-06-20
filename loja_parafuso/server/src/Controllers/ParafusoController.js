@@ -23,12 +23,12 @@ class ParafusoController {
     read(req, res) {
         ParafusoModel.read().then(
             resposta => {
-                console.debug("Mostrando Parafusos")
+                console.debug("Mostrando Parafusos");
                 res.status(resposta[0]).json(resposta[1])
             }
         ).catch(
             resposta => {
-                console.debug("ERRO: Mostrando Parafusos")
+                console.debug("ERRO: Mostrando Parafusos");
                 res.status(resposta[0]).json(resposta[1])
             }
         )

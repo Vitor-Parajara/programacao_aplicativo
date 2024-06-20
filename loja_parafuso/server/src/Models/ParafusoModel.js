@@ -42,7 +42,7 @@ class ParafusoModel {
                 }else if(retorno.affectedRows>0){
                     resolve([200],retorno)
                 }else{
-                    resolve([404],"Parafuso não encontrado")
+                    resolve([404,"Parafuso não encontrado"])
                 }
                 
             })
@@ -56,8 +56,11 @@ class ParafusoModel {
             this.conexao.query(sql,(erro,retorno)=>{
                 if(erro){
                     reject([400],erro)
+                }else if(retorno.affectedRows>0){
+                    resolve([200],retorno)
+                }else{
+                    resolve([404,"Parafuso não encontrado"])
                 }
-                resolve([200],retorno)
             })
         });
     }
