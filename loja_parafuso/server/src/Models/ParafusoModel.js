@@ -21,7 +21,7 @@ class ParafusoModel {
     }
 
     read() {
-        let sql = `SELECT * FROM parafusos;`
+        let sql = `SELECT * FROM parafusos;`;
         return new Promise((resolve,reject)=>{
             this.conexao.query(sql,(erro,retorno)=>{
                 if(erro){
@@ -33,7 +33,7 @@ class ParafusoModel {
     }
 
     update(id_parafuso, nome) {
-        let sql = `update parafusos set nome="${nome}" where id_parafuso = "${id_parafuso}"`
+        let sql = `update parafusos set nome="${nome}" where id_parafuso = "${id_parafuso}";`;
 
         return new Promise((resolve,reject)=>{
             this.conexao.query(sql,(erro,retorno)=>{
@@ -49,8 +49,8 @@ class ParafusoModel {
         });
     }
 
-    delete(index) {
-        let sql = `delete from parafusos where id_parafuso = "${id_parafuso}"`
+    delete(id_parafuso) {
+        let sql = `DELETE FROM parafusos WHERE id_parafuso = "${id_parafuso}";`;
 
         return new Promise((resolve,reject)=>{
             this.conexao.query(sql,(erro,retorno)=>{

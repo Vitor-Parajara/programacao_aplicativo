@@ -54,8 +54,17 @@ class ParafusoController {
     delete(req,res){
         const id_parafuso = req.params.id_parafuso;
         
-        ParafusoModel.delete(id_parafuso);
-        res.status(200).json("Parafuso Deletado");
+        ParafusoModel.delete(id_parafuso).then(
+            resposta => {
+                console.debug("Parafuso Deletado");
+                res.status(resposta[0]).json(resposta[1])
+            }
+        ).catch(
+            resposta => {
+                console.debug("ERRO: Parafuso Deletado");
+                res.status(resposta[0]).json(resposta[1])
+            }
+        );
     }
 }
 
